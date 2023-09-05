@@ -248,7 +248,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="26dp"
             android:layout_marginTop="13dp"
-            android:layout_marginEnd="25.5dp"
+            android:layout_marginEnd="25.6dp"
             android:ellipsize="end"
             android:fontFamily="@font/lato_regular"
             android:maxLines="4"
