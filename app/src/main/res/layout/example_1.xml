@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+        <!-- Horizontal Bar of E -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FF5733"
+            android:layout_alignParentTop="true"
+            android:id="@+id/topBar" />
+
+        <!-- Vertical Bar of E (Left) -->
+        <View
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:background="#FF5733"
+            android:layout_below="@id/topBar"
+            android:id="@+id/verticalLeftBar" />
+
+        <!-- Horizontal Bar of E (Middle) -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="#FF5733"
+            android:layout_below="@id/topBar"
+            android:layout_toRightOf="@id/verticalLeftBar"
+            android:id="@+id/middleBar" />
+
+        <!-- Vertical Bar of E (Right) -->
+        <View
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:background="#FF5733"
+            android:layout_below="@id/topBar"
+            android:layout_toRightOf="@id/middleBar"
+            android:id="@+id/verticalRightBar" />
+
+        <!-- Horizontal Bar of E (Bottom) -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="#FF5733"
+            android:layout_below="@id/verticalLeftBar"
+            android:layout_toRightOf="@id/verticalLeftBar"
+            android:id="@+id/bottomBar" />
+
+</RelativeLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/productsans"
+        android:text="My Orders"
+        android:textColor="#1D1F22"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:toggle_requiredAmount="1"
+        app:toggle_selectAnimation="circular_reveal"
+        app:toggle_selectableAmount="1">
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Pending"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_selectedBackgroundColor="#43484B"
+            app:toggle_selectedTextColor="@color/white"
+            app:toggle_textColor="@color/black" />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Delivered"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_selectedBackgroundColor="#43484B"
+            app:toggle_selectedTextColor="@color/white"
+            app:toggle_textColor="@color/black"
+
+            />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/productsans"
+            android:text="Cancelled"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_selectedBackgroundColor="#43484B"
+            app:toggle_selectedTextColor="@color/white"
+            app:toggle_textColor="@color/black"
+
+            />
+
+
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/card2"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButton"
+        app:layout_constraintStart_toStartOf="@+id/toggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="18dp"
+                android:text="10/05/2021"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:text="Order#1829"
+                android:textColor="#141416"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="24dp"
+                android:text="Tracking number:"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" IK287368831"
+                android:textColor="#141416"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="54dp"
+                android:text="Quantity:"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView12"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2"
+                android:textColor="#141416"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:text="Subtotal:"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" $210"
+                android:textColor="#141416"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="CANCELED"
+                android:textColor="#C50000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/CardView.Dark"
+                android:layout_width="95dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                android:text="Details"
+                android:textColor="#141416"
+                app:layout_constraintEnd_toEndOf="@+id/textView17"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                app:strokeColor="#777E90"
+                app:strokeWidth="1dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/card1"
+        app:layout_constraintStart_toStartOf="@+id/card1"
+        app:layout_constraintTop_toBottomOf="@id/card1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="18dp"
+                android:text="10/05/2021"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView210"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView210"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:text="Order#1824"
+                android:textColor="#141416"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="24dp"
+                android:text="Tracking number:"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView210"
+                app:layout_constraintStart_toStartOf="@+id/textView210"
+                app:layout_constraintTop_toBottomOf="@+id/textView210" />
+
+            <TextView
+                android:id="@+id/textView213"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" IK2882918812"
+                android:textColor="#141416"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView212"
+                app:layout_constraintStart_toEndOf="@+id/textView212"
+                app:layout_constraintTop_toTopOf="@+id/textView212" />
+
+            <TextView
+                android:id="@+id/textView214"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="54dp"
+                android:text="Quantity:"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView212"
+                app:layout_constraintStart_toStartOf="@+id/textView212"
+                app:layout_constraintTop_toBottomOf="@+id/textView212" />
+
+            <TextView
+                android:id="@+id/textView215"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 3"
+                android:textColor="#141416"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView214"
+                app:layout_constraintStart_toEndOf="@+id/textView214"
+                app:layout_constraintTop_toTopOf="@+id/textView214" />
+
+            <TextView
+                android:id="@+id/textView216"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:text="Subtotal:"
+                android:textColor="#777E90"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView215"
+                app:layout_constraintStart_toEndOf="@+id/textView215"
+                app:layout_constraintTop_toTopOf="@+id/textView215" />
+
+            <TextView
+                android:id="@+id/textView217"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" $120"
+                android:textColor="#141416"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView216"
+                app:layout_constraintStart_toEndOf="@+id/textView216"
+                app:layout_constraintTop_toTopOf="@+id/textView216" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="CANCELED"
+                android:textColor="#C50000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView214" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/CardView.Dark"
+                android:layout_width="95dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                android:text="Details"
+                android:textColor="#141416"
+                app:layout_constraintEnd_toEndOf="@+id/textView217"
+                app:layout_constraintStart_toStartOf="@+id/textView216"
+                app:layout_constraintTop_toBottomOf="@+id/textView216"
+                app:strokeColor="#777E90"
+                app:strokeWidth="1dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

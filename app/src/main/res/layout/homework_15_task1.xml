@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#15141F">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView55"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.158" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Star Wars: The Last Jedi"
+            android:textColor="#FFF"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:src="@drawable/ic_4k"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="4K"
+            android:textColor="#E0E0E0"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_clock"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="152 minutes"
+            android:textColor="#BCBCBC"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19.5dp"
+            android:src="@drawable/imdb_star"
+            app:layout_constraintBottom_toBottomOf="@+id/textView18"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/Imdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6.5dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="7.0(IMDb)"
+            android:textColor="#BCBCBC"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19.5dp"
+            android:src="@drawable/vector_1_poloska"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Imdb" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Release date"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="December 9, 2017"
+            android:textColor="#BCBCBC"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="168dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Genre"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.5dp"
+            android:src="@drawable/ic_action"
+            app:layout_constraintStart_toStartOf="@id/textView20"
+            app:layout_constraintTop_toBottomOf="@id/textView20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="Action"
+            android:textColor="#BCBCBC"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:src="@drawable/ic_action"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintStart_toEndOf="@id/imageView7"
+            app:layout_constraintTop_toTopOf="@id/imageView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="Sci-Fi"
+            android:textColor="#BCBCBC"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19.5dp"
+            android:src="@drawable/vector_1_poloska"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView7" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Synopsis"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="26dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_regular"
+            android:maxLines="4"
+            android:text="@string/Synopsis_of_movie"
+            android:textColor="#BCBCBC"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/readMoreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:text="Read More..."
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView23" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="Related Movies"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="27dp"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView24">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="147dp"
+                    android:layout_height="145dp"
+                    android:backgroundTint="#201F27"
+                    app:cardCornerRadius="22dp">
+
+                    <ImageButton
+                        android:id="@+id/page1"
+                        android:layout_width="147dp"
+                        android:layout_height="107dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/page_1" />
+
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="139dp"
+                        android:layout_height="33dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="110dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Star Wars: The Rise of Skywalker (2019)"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="147dp"
+                    android:layout_height="145dp"
+                    android:layout_marginStart="15dp"
+                    android:backgroundTint="#201F27"
+                    app:cardCornerRadius="22dp">
+
+                    <ImageButton
+                        android:id="@+id/page2"
+                        android:layout_width="147dp"
+                        android:layout_height="107dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/page_2" />
+
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="139dp"
+                        android:layout_height="33dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="110dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Star Wars: The Force Awakens (2015)"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="147dp"
+                    android:layout_height="145dp"
+                    android:layout_marginStart="15dp"
+                    android:backgroundTint="#201F27"
+                    app:cardCornerRadius="22dp">
+
+
+                    <ImageButton
+                        android:id="@+id/page3"
+                        android:layout_width="147dp"
+                        android:layout_height="107dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/page_3" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="139dp"
+                        android:layout_height="33dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="110dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Rogue One: A Star Wars Story (2016)"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="147dp"
+                    android:layout_height="145dp"
+                    android:layout_marginStart="15dp"
+                    android:backgroundTint="#201F27"
+                    app:cardCornerRadius="22dp">
+
+
+                    <ImageButton
+                        android:id="@+id/page4"
+                        android:layout_width="147dp"
+                        android:layout_height="107dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/page_4" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="139dp"
+                        android:layout_height="33dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="110dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Solo: A Star Wars Story (2018)"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="145dp" />
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontalScrollView">
+
+        </View>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
